@@ -24,6 +24,5 @@ public class CustomerServiceImpl implements CustomerService{
         messageWrapper.setData("Added");
 
         return  messageWrapper;
-
     }
 }

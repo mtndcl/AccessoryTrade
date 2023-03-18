@@ -21,7 +21,6 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-
     @PostMapping("adduser")
     public MessageWrapper addCustomer(@RequestBody Customer customer){
         return customerService.addCustomer(customer);

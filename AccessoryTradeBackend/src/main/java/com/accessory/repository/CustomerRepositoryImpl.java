@@ -10,5 +10,4 @@ public abstract class CustomerRepositoryImpl implements CustomerRepository {
     public void insertCustomer(Customer customer) {
         insertCustomer(customer);
     }
-
 }

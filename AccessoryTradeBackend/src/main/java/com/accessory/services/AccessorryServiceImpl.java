@@ -17,6 +17,7 @@ public class AccessorryServiceImpl implements AccessoryService{
     public AccessorryServiceImpl(AccessorryRepository accessorryRepository){
         this.accessorryRepository=accessorryRepository;
     }
+
     @Override
     public List<Accessory> getAll() {
         return accessorryRepository.findAll();

@@ -1,4 +1,5 @@
 package com.accessory.model;
 
-public class Neckacle {
+public class Neckacle extends BaseModel{
+
 }
