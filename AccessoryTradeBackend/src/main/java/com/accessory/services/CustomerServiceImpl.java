@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl {
 
     private CustomerRepository customerRepository;
 
@@ -16,9 +16,9 @@ public class CustomerServiceImpl implements CustomerService{
     public CustomerServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
-    @Override
     public MessageWrapper addCustomer(Customer customer) {
-        customerRepository.insertCustomer(customer);
+
+        customerRepository.save(customer);
         MessageWrapper messageWrapper = new MessageWrapper();
         messageWrapper.setMessageType(MessageType.SUCCESS);
         messageWrapper.setData("Added");

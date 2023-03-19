@@ -6,6 +6,8 @@ import com.accessory.messagr.MessageWrapper;
 import com.accessory.model.Accessory;
 import com.accessory.services.AccessorryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,12 +25,13 @@ public class AccessoryController {
         this.accessorryService = accessorryService;
     }
 
-    @GetMapping("/all1")
+    @GetMapping("all")
     public MessageWrapper getAllAccessory() {
-        List<Accessory> accessoryList = this.accessorryService.getAll();
-        MessageWrapper messageWrapper = new MessageWrapper();
-        messageWrapper.setMessageType(MessageType.SUCCESS);
-        messageWrapper.setData(accessoryList);
-        return messageWrapper;
+        return this.accessorryService.getAll();
+    }
+
+    @GetMapping("sortByPrice")
+    public MessageWrapper sortByPrice() {
+        return this.accessorryService.sortByPrice();
     }
 }

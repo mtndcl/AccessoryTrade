@@ -1,13 +1,12 @@
 package com.accessory.repository;
 
-import com.accessory.model.Accessory;
 import com.accessory.model.user.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CustomerRepository extends JpaRepository<Customer, Long>{
+public interface CustomerRepository extends JpaRepository<Customer, Integer>{
 
 
-    void insertCustomer(Customer customer);
+
 }
