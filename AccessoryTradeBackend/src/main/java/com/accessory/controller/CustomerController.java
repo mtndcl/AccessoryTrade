@@ -21,7 +21,6 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-
     @PostMapping("adduser")
     public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer){
        customerService.addCustomer(customer);

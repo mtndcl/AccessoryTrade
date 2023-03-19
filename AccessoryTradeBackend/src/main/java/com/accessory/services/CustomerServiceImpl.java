@@ -24,6 +24,5 @@ public class CustomerServiceImpl {
         messageWrapper.setData("Added");
 
         return  messageWrapper;
-
     }
 }

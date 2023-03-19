@@ -10,4 +10,5 @@ import javax.persistence.Table;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Customer extends User{
+
 }
