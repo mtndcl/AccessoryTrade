@@ -1,5 +1,10 @@
 package com.accessory.model;
 
-public class Neckacle extends BaseModel{
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "neckacle")
+public class Neckacle extends BaseModel {
 
 }

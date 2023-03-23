@@ -1,4 +1,4 @@
-package com.accessory.repository;
+package com.accessory.repository.customer;
 
 import com.accessory.model.user.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

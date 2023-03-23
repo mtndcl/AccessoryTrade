@@ -1,6 +1,11 @@
 package com.accessory.model;
 
-public class Earrings extends BaseModel{
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "earrings")
+public class Earrings extends BaseModel {
     private String dddd;
     public String getDddd() {
         return dddd;
