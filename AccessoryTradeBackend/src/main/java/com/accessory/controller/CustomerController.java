@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("customer")
 public class CustomerController {
     private final CustomerServiceImpl customerService;
 
@@ -21,7 +21,7 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @PostMapping("/adduser")
+    @PostMapping("adduser")
     public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer){
        customerService.addCustomer(customer);
 

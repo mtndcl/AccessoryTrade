@@ -3,7 +3,7 @@ package com.accessory.services;
 import com.accessory.messagr.MessageType;
 import com.accessory.messagr.MessageWrapper;
 import com.accessory.model.user.Customer;
-import com.accessory.repository.customer.CustomerRepository;
+import com.accessory.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

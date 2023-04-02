@@ -2,9 +2,12 @@ package com.accessory.services;
 
 
 import com.accessory.messagr.MessageWrapper;
-import com.accessory.repository.accressory.AccessorryRepository;
+import com.accessory.model.Accessory;
+import com.accessory.repository.AccessorryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class AccessorryServiceImpl {

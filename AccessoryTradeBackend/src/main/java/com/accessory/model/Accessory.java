@@ -1,14 +1,11 @@
 package com.accessory.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
+@Table
 @Entity
-@Table (name= "accessory")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public  class Accessory extends BaseModel {
+public  class Accessory extends BaseModel{
     private String name;
     private String description;
     private Double price;
